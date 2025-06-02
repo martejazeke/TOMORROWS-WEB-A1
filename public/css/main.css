@@ -515,7 +515,7 @@ section {
 
 .bass-banner {
   background-color: #2F3843;
-  background-image: url("/public/images/bass-classic.png");
+  background-image: url("/images/bass-classic.png");
   background-size: cover;
   background-position: right center;
   padding: 6rem 4rem;
@@ -558,7 +558,7 @@ section {
 
 .eg-banner {
   background-color: #2F3843;
-  background-image: url("/public/images/eg-expressive.png");
+  background-image: url("/images/eg-expressive.png");
   background-size: cover;
   background-position: right center;
   padding: 6rem;
@@ -607,7 +607,7 @@ section {
 <!---->
 .ag-banner {
   background-color: #2F3843;
-  background-image: url("/public/images/ag-resonant.png");
+  background-image: url("/images/ag-resonant.png");
   background-size: cover;
   background-position: right center;
   padding: 6rem;
