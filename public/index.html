@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tones</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <a class="logo" href="#">THE TONES</a>
+                
+            <div class="icons">
+              <div class="account-container">
+                  <button class="account-trigger">
+                      <span class="material-symbols-outlined">account_circle</span>
+                  </button>
+                  <div class="account-dropdown hidden">
+                      <div class="account-header">
+                          <h3 id="user-email">Not logged in</h3>
+                      </div>
+                      <div class="account-options">
+                          <button id="logout-btn" class="hidden">
+                              <span class="material-symbols-outlined">logout</span>
+                              Logout
+                          </button>
+                          <button id="login-trigger" class="login-btn">
+                              <span class="material-symbols-outlined">login</span>
+                              Login
+                          </button>
+                      </div>
+                  </div>
+              </div>
+                <div class="wishlist-container">
+                    <button class="wishlist-trigger">
+                        <span class="material-symbols-outlined">favorite</span>
+                    </button>
+                    <div class="wishlist-dropdown hidden">
+                        <div class="wishlist-header">
+                            <h3>My Wishlist</h3>
+                        </div>
+                        <div class="wishlist-login-required">
+                            <span class="material-symbols-outlined">lock</span>
+                            <p>Please login to view your wishlist</p>
+                            <button class="login-btn" id="wishlist-login-btn">Login</button>
+                        </div>
+                        <div class="wishlist-items" id="wishlist-items"></div>
+                        <div class="wishlist-empty hidden">
+                            <span class="material-symbols-outlined">favorite_border</span>
+                            <p>Your wishlist is empty</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-icon">
+    <button id="cart-btn" class="cart-trigger">
+        <span class="material-symbols-outlined">shopping_cart</span>
+        <span id="cart-count" class="cart-count">0</span>
+    </button>
+</div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#eg">Electric Guitars</a></li>
+                <li><a href="#bass">Bass</a></li>
+                <li><a href="#ag">Acoustic Guitars</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Where music<br>meets <span>haven.</span></h1>
+            <p>Explore premium quality instruments built for every tone.</p>
+            <a href="#guitars">Shop Now!</a>
+        </div>
+
+        <div class="hero-image">
+            <div class="blob-bg"></div>
+            <img src="./images/instruments.png" alt="Guitars">
+        </div>
+    </section>
+
+    <section class="eg-banner" id="eg">
+      <div class="eg-content">
+        <div class="classic-text">
+          <h2>Tone Sculptor</h2>
+          <p>Effortlessly expressive with vintage charm and modern playability that brings every note to life.</p>
+          <a class="shop-btn" href="#guitars">Shop Now!</a>
+        </div>
+      </div>
+   </section>
+
+    <section class="product-carousel" id="guitars">
+    <h2>Explore Electric Guitars</h2>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+
+            <!--Slide 1-->
+            <div class="swiper-slide">
+                <div class="card">
+                  <div class="blob-bg"></div>
+
+
+                  <div class="card-inner-wrapper">
+                    <div class="flip-trigger">
+                      <div class="card-inner">
+                        <div class="card-front">
+                          <img class="front-image" src="images/amp/ow-front.png" alt="Front of Guitar" />
+                        </div>
+                        <div class="card-back">
+                          <img class="back-image" src="images/amp/ow-back.png" alt="Back of Guitar" />
+                        </div>
+                    </div>
+                   </div>
+
+                   <!--Colorway dots-->
+                   <div class="color-options">
+                    <div class="color-dot active" data-front="images/amp/ow-front.png" data-back="images/amp/ow-back.png" style="background-color: #E2D4B7;" ></div>
+                    <div class="color-dot"  data-front="images/amp/dn-front.png" data-back="images/amp/dn-back.png" style="background-color: #0D161A;"></div>
+                    <div class="color-dot"  data-front="images/amp/ct-front.png" data-back="images/amp/ct-back.png" style="background-color: #A00119;"></div>
+                   </div>
+                  </div>
+                  <h3>Fender AM Pro II</h3>
+                  <p>AED 6,755.00</p>
+                  <button class="view-more"
+                  data-name="Fender AM Pro II Telecaster"
+                  data-price="AED 6,755.00"
+                  data-description="Our popular Deep 'C' neck now sports smooth rolled fingerboard edges, a 'Super-Natural' satin finish and a newly sculpted neck heel for a supremely comfortable feel and easy access to the upper register. New V-Mod II Telecaster single-coil pickups are more articulate than ever while delivering the twang, snap and snarl that made the Tele famous."
+                  data-image="images/amp/ow-front.png"
+                  data-back="images/amp/ow-back.png"
+                  data-colorways='[
+                  {"front": "images/amp/ow-front.png", "back": "images/amp/ow-back.png", "color": "#E2D4B7"},
+                  {"front": "images/amp/dn-front.png", "back": "images/amp/dn-back.png", "color": "#0D161A"},
+                  {"front": "images/amp/ct-front.png", "back": "images/amp/ct-back.png", "color": "#A00119"}
+                  ]'>View more ></button>
+                </div>
+            </div>
+
+            <!--Slide 2-->
+            <div class="swiper-slide">
+                <div class="card">
+                  <div class="blob-bg"></div>
+                  <div class="card-inner-wrapper">
+                    <div class="flip-trigger">
+                      <div class="card-inner">
+                        <div class="card-front">
+                          <img class="front-image" src="images/sq/ow-front.png" alt="Front of Guitar" />
+                        </div>
+                        <div class="card-back">
+                          <img class="back-image" src="images/sq/ow-back.png" alt="Back of Guitar" />
+                        </div>
+                    </div>
+                   </div>
+
+                   <!--Colorway dots-->
+                   <div class="color-options">
+                    <div class="color-dot active" data-front="images/sq/ow-front.png" data-back="images/sq/ow-back.png" style="background-color: #E2D4B7;" ></div>
+                    <div class="color-dot active" data-front="images/sq/lpb-front.png" data-back="images/sq/lpb-back.png" style="background-color: #224E6F;" ></div>
+                    <div class="color-dot active" data-front="images/sq/bk-front.png" data-back="images/sq/bk-back.png" style="background-color: #222222;" ></div>
+                   </div>
+                  </div>
+                  <h3>Squier Affinity Strat</h3>
+                  <p>AED 769.00</p>
+                  <button class="view-more"
+                  data-name="Squier Affinity Strat"
+                  data-price="AED 769.00"
+                  data-description="The SE Silver Sky features a lightweight poplar body loaded with a trio of 635JM “S” pickups to deliver all the glassy highs and round bottom end that you’d expect out of a classic three single-coil configuration. While the original Silver Sky kept the original 7.25-inch radius of its inspiration, the SE Silver Sky's maple neck and fingerboard offers a slightly modernized 8.5-inch radius that feels vintage, but injects a dose of modern playability."
+                  data-image="images/sq/ow-front.png"
+                  data-back="images/sq/ow-back.png"
+                  data-colorways='[
+                  {"front": "images/sq/ow-front.png", "back": "images/sq/ow-back.png", "color": "#E2D4B7"},
+                  {"front": "images/sq/lpb-front.png", "back": "images/sq/lpb-back.png", "color": "#224E6F"},
+                  {"front": "images/sq/bk-front.png", "back": "images/sq/bk-back.png", "color": "#222222"}
+                  ]'>View more ></button>
+                </div>
+            </div>
+
+            <!--Slide 3-->
+            <div class="swiper-slide">
+                <div class="card">
+                  <div class="blob-bg"></div>
+                  <div class="card-inner-wrapper">
+                    <div class="flip-trigger">
+                      <div class="card-inner">
+                        <div class="card-front">
+                          <img class="front-image" src="images/ster/db-front.png" alt="Front of Guitar" />
+                        </div>
+                        <div class="card-back">
+                          <img class="back-image" src="images/ster/db-back.png" alt="Back of Guitar" />
+                        </div>
+                    </div>
+                   </div>
+
+                   <!--Colorway dots-->
+                   <div class="color-options">
+                    <div class="color-dot" data-front="images/ster/db-front.png" data-back="images/ster/db-back.png" style="background-color: #CDE3EE;" ></div>
+                   </div>
+                  </div>
+                  <h3>Sterling by Music Man</h3>
+                  <p>AED 1,745.00</p>
+                  <button class="view-more"
+                  data-name="Sterling by Music Man"
+                  data-price="AED 1,745.00"
+                  data-description="The SE Silver Sky features a lightweight poplar body loaded with a trio of 635JM “S” pickups to deliver all the glassy highs and round bottom end that you’d expect out of a classic three single-coil configuration. While the original Silver Sky kept the original 7.25-inch radius of its inspiration, the SE Silver Sky's maple neck and fingerboard offers a slightly modernized 8.5-inch radius that feels vintage, but injects a dose of modern playability."
+                  data-image="images/ster/db-front.png"
+                  data-back="images/ster/db-back.png"
+                  data-colorways='[
+                  {"front": "images/ster/db-front.png", "back": "images/ster/db-back.png", "color": "#CDE3EE"}
+                  ]'>View more ></button>
+                </div>
+            </div>
+
+            <!--Slide 4-->
+            <div class="swiper-slide">
+                <div class="card">
+                  <div class="blob-bg"></div>
+                  <div class="card-inner-wrapper">
+                    <div class="flip-trigger">
+                      <div class="card-inner">
+                        <div class="card-front">
+                          <img class="front-image" src="images/prs/sg-front.png" alt="Front of Guitar" />
+                        </div>
+                        <div class="card-back">
+                          <img class="back-image" src="images/prs/sg-back.png" alt="Back of Guitar" />
+                        </div>
+                    </div>
+                   </div>
+
+                   <!--Colorway dots-->
+                   <div class="color-options">
+                    <div class="color-dot active" data-front="images/prs/sg-front.png" data-back="images/prs/sg-back.png" style="background-color: #5A5C5B;" ></div>
+                    <div class="color-dot" data-front="images/prs/sb-front.png" data-back="images/prs/sb-back.png" style="background-color: #6F8E89;"></div>
+                    <div class="color-dot" data-front="images/prs/mw-front.png" data-back="images/prs/mw-back.png" style="background-color: #DFC276;"></div>
+                   </div>
+                  </div>
+                  <h3>PRS SE Silver Sky</h3>
+                  <p>AED 3,400.00</p>
+                  <button class="view-more"
+                  data-name="PRS SE Silver Sky"
+                  data-price="AED 3,400.00"
+                  data-description="The SE Silver Sky features a lightweight poplar body loaded with a trio of 635JM “S” pickups to deliver all the glassy highs and round bottom end that you’d expect out of a classic three single-coil configuration. While the original Silver Sky kept the original 7.25-inch radius of its inspiration, the SE Silver Sky's maple neck and fingerboard offers a slightly modernized 8.5-inch radius that feels vintage, but injects a dose of modern playability."
+                  data-image="images/prs/sg-front.png"
+                  data-back="images/prs/sg-back.png"
+                  data-colorways='[
+                  {"front": "images/prs/sg-front.png", "back": "images/prs/sg-back.png", "color": "#5A5C5B"},
+                  {"front": "images/prs/sb-front.png", "back": "images/prs/sb-back.png", "color": "#6F8E89"},
+                  {"front": "images/prs/mw-front.png", "back": "images/prs/mw-back.png", "color": "#DFC276"}
+                  ]'>View more ></button>
+                </div>
+            </div>
+            
+        </div> <!--End of the swipper wrapper-->
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+        
+    </div>
+   </section>
+
+   <section class="bass-banner" id="bass">
+      <div class="banner-content">
+        <div class="classic-text">
+          <h2>All-time Classic</h2>
+          <p>A true standout with timeless looks and modern upgrades that let your groove speak volumes.</p>
+          <a class="shop-btn" id="basses">Shop Now!</a>
+        </div>
+      </div>
+   </section>
+
+   <section class="product-carousel" id="acoustic">
+    <h2>Explore Bass Guitars</h2>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+
+            <!--Slide 1-->
+            <div class="swiper-slide">
+                <div class="card">
+                  <div class="blob-bg"></div>
+
+
+                  <div class="card-inner-wrapper">
+                    <div class="flip-trigger">
+                      <div class="card-inner">
+                        <div class="card-front">
+                          <img class="front-image" src="images/mm/cg-front.png" alt="Front of Guitar" />
+                        </div>
+                        <div class="card-back">
+                          <img class="back-image" src="images/mm/cg-back.png" alt="Back of Guitar" />
+                        </div>
+                    </div>
+                   </div>
+
+                   <!--Colorway dots-->
+                   <div class="color-options">
+                    <div class="color-dot active" data-front="images/mm/cg-front.png" data-back="images/mm/cg-back.png" style="background-color: #B39E70;" ></div>
+                    <div class="color-dot" data-front="images/mm/vw-front.png" data-back="images/mm/vw-back.png" style="background-color: #CCA45F;" ></div>
+                   </div>
+                  </div>
+                  <h3>Marcus Miller V5</h3>
+                  <p>AED 1,500.00</p>
+                  <button class="view-more"
+                  data-name="Marcus Miller V5"
+                  data-price="AED 1,500.00"
+                  data-description="Our popular Deep 'C' neck now sports smooth rolled fingerboard edges, a 'Super-Natural' satin finish and a newly sculpted neck heel for a supremely comfortable feel and easy access to the upper register. New V-Mod II Telecaster single-coil pickups are more articulate than ever while delivering the twang, snap and snarl that made the Tele famous."
+                  data-image="images/mm/cg-front.png"
+                  data-back="images/mm/cg-back.png"
+                  data-colorways='[
+                  {"front": "images/mm/cg-front.png", "back": "images/mm/cg-back.png", "color": "#B39E70"},
+                  {"front": "images/mm/vw-front.png", "back": "images/mm/vw-back.png", "color": "#CCA45F"}]
+                  '>View more ></button>
+                </div>
+            </div>
+
+            
+            <!--Slide 2-->
+            <div class="swiper-slide">
+                <div class="card">
+                  <div class="blob-bg"></div>
+
+
+                  <div class="card-inner-wrapper">
+                    <div class="flip-trigger">
+                      <div class="card-inner">
+                        <div class="card-front">
+                          <img class="front-image" src="images/ib/atk-front.png" alt="Front of Guitar" />
+                        </div>
+                        <div class="card-back">
+                          <img class="back-image" src="images/ib/atk-back.png" alt="Back of Guitar" />
+                        </div>
+                    </div>
+                   </div>
+
+                   <!--Colorway dots-->
+                   <div class="color-options">
+                    <div class="color-dot active" data-front="images/ib/atk-front.png" data-back="images/ib/atk-back.png" style="background-color: #222222;" ></div>
+                   </div>
+                  </div>
+                  <h3>Ibanez ATK-200</h3>
+                  <p>AED 500.00</p>
+                  <button class="view-more"
+                  data-name="Ibanez ATK-200"
+                  data-price="AED 500.00"
+                  data-description="Our popular Deep 'C' neck now sports smooth rolled fingerboard edges, a 'Super-Natural' satin finish and a newly sculpted neck heel for a supremely comfortable feel and easy access to the upper register. New V-Mod II Telecaster single-coil pickups are more articulate than ever while delivering the twang, snap and snarl that made the Tele famous."
+                  data-image="images/ib/atk-front.png"
+                  data-back="images/ib/atk-back.png"
+                  data-colorways='[
+                  {"front": "images/ib/atk-front.png", "back": "images/ib/atk-back.png", "color": "#222222"}]'>View more ></button>
+                </div>
+            </div>
+
+            <!--Slide 3-->
+            <div class="swiper-slide">
+                <div class="card">
+                  <div class="blob-bg"></div>
+
+
+                  <div class="card-inner-wrapper">
+                    <div class="flip-trigger">
+                      <div class="card-inner">
+                        <div class="card-front">
+                          <img class="front-image" src="images/sq/sq-front.png" alt="Front of Guitar" />
+                        </div>
+                        <div class="card-back">
+                          <img class="back-image" src="images/sq/sq-back.png" alt="Back of Guitar" />
+                        </div>
+                    </div>
+                   </div>
+
+                   <!--Colorway dots-->
+                   <div class="color-options">
+                    <div class="color-dot active" data-front="images/sq/sq-front.png" data-back="images/sq/sq-back.png" style="background-color: #222222;" ></div>
+                   </div>
+                  </div>
+                  <h3>Squier CV 70s</h3>
+                  <p>AED 1,200.00</p>
+                  <button class="view-more"
+                  data-name="Squier CV 70s"
+                  data-price="AED 1,200.00"
+                  data-description="Our popular Deep 'C' neck now sports smooth rolled fingerboard edges, a 'Super-Natural' satin finish and a newly sculpted neck heel for a supremely comfortable feel and easy access to the upper register. New V-Mod II Telecaster single-coil pickups are more articulate than ever while delivering the twang, snap and snarl that made the Tele famous."
+                  data-image="images/sq/sq-front.png"
+                  data-back="images/sq/sq-back.png"
+                  data-colorways='[
+                  {"front": "images/sq/sq-front.png", "back": "images/sq/sq-back.png", "color": "#222222"}]'>View more ></button>
+                </div>
+            </div>
+
+            <!--Slide 4-->
+            <div class="swiper-slide">
+                <div class="card">
+                  <div class="blob-bg"></div>
+
+
+                  <div class="card-inner-wrapper">
+                    <div class="flip-trigger">
+                      <div class="card-inner">
+                        <div class="card-front">
+                          <img class="front-image" src="images/hb/hb-front.png" alt="Front of Guitar" />
+                        </div>
+                        <div class="card-back">
+                          <img class="back-image" src="images/hb/hb-back.png" alt="Back of Guitar" />
+                        </div>
+                    </div>
+                   </div>
+
+                   <!--Colorway dots-->
+                   <div class="color-options">
+                    <div class="color-dot active" data-front="images/hb/hb-front.png" data-back="images/hb/hb-back.png" style="background-color: #D5A75C;" ></div>
+                   </div>
+                  </div>
+                  <h3>Harley Benton JB </h3>
+                  <p>AED 600.00</p>
+                  <button class="view-more"
+                  data-name="Harley Benton JB-75MN"
+                  data-price="AED 600.00"
+                  data-description="Our popular Deep 'C' neck now sports smooth rolled fingerboard edges, a 'Super-Natural' satin finish and a newly sculpted neck heel for a supremely comfortable feel and easy access to the upper register. New V-Mod II Telecaster single-coil pickups are more articulate than ever while delivering the twang, snap and snarl that made the Tele famous."
+                  data-image="images/hb/hb-front.png"
+                  data-back="images/hb/hb-back.png"
+                  data-colorways='[
+                  {"front": "images/hb/hb-front.png", "back": "images/hb/hb-back.png", "color": "#D5A75C"}]'>View more ></button>
+                </div>
+            </div>
+
+        </div> <!--End of the swiper wrapper-->
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+        
+    </div>
+   </section>
+
+   <section class="ag-banner" id="ag">
+      <div class="ag-content">
+        <div class="classic-text">
+          <h2>Tone Sculptor</h2>
+          <p>Effortlessly expressive with vintage charm and modern playability that brings every note to life.</p>
+          <a class="shop-btn" href="#acoustic">Shop Now!</a>
+        </div>
+      </div>
+   </section>
+
+   <section class="product-carousel" id="acoustic">
+    <h2>Explore Acoustic Guitars</h2>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+
+            <!--Slide 1-->
+            <div class="swiper-slide">
+                <div class="card">
+                  <div class="blob-bg"></div>
+
+
+                  <div class="card-inner-wrapper">
+                    <div class="flip-trigger">
+                      <div class="card-inner">
+                        <div class="card-front">
+                          <img class="front-image" src="images/ac/leg-front.png" alt="Front of Guitar" />
+                        </div>
+                        <div class="card-back">
+                          <img class="back-image" src="images/ac/leg-back.png" alt="Back of Guitar" />
+                        </div>
+                    </div>
+                   </div>
+
+                   <!--Colorway dots-->
+                   <div class="color-options">
+                    <div class="color-dot active" data-front="images/ac/leg-front.png" data-back="images/ac/leg-back.png" style="background-color: #F19F63;" ></div>
+                   </div>
+                  </div>
+                  <h3>Taylor Legacy Edition</h3>
+                  <p>AED 12,500.00</p>
+                  <button class="view-more"
+                  data-name="Taylor Legacy Edition"
+                  data-price="AED 12,500.00"
+                  data-description="Our popular Deep 'C' neck now sports smooth rolled fingerboard edges, a 'Super-Natural' satin finish and a newly sculpted neck heel for a supremely comfortable feel and easy access to the upper register. New V-Mod II Telecaster single-coil pickups are more articulate than ever while delivering the twang, snap and snarl that made the Tele famous."
+                  data-image="images/ac/leg-front.png"
+                  data-back="images/ac/leg-back.png"
+                  data-colorways='[
+                  {"front": "images/ac/leg-front.png", "back": "images/ac/leg-back.png", "color": "#F19F63"}]'>View more ></button>
+                </div>
+            </div>
+
+            
+            <!--Slide 2-->
+            <div class="swiper-slide">
+                <div class="card">
+                  <div class="blob-bg"></div>
+
+
+                  <div class="card-inner-wrapper">
+                    <div class="flip-trigger">
+                      <div class="card-inner">
+                        <div class="card-front">
+                          <img class="front-image" src="images/ac/mar-front.png" alt="Front of Guitar" />
+                        </div>
+                        <div class="card-back">
+                          <img class="back-image" src="images/ac/mar-back.png" alt="Back of Guitar" />
+                        </div>
+                    </div>
+                   </div>
+
+                   <!--Colorway dots-->
+                   <div class="color-options">
+                    <div class="color-dot active" data-front="images/ac/mar-front.png" data-back="images/ac/mar-back.png" style="background-color: #D1A972;" ></div>
+                   </div>
+                  </div>
+                  <h3>Martin Guitar D-28E</h3>
+                  <p>AED 15,000.00</p>
+                  <button class="view-more"
+                  data-name="Martin Guitar D-28E"
+                  data-price="AED 15,000.00"
+                  data-description="Our popular Deep 'C' neck now sports smooth rolled fingerboard edges, a 'Super-Natural' satin finish and a newly sculpted neck heel for a supremely comfortable feel and easy access to the upper register. New V-Mod II Telecaster single-coil pickups are more articulate than ever while delivering the twang, snap and snarl that made the Tele famous."
+                  data-image="images/ac/mar-front.png"
+                  data-back="images/ac/mar-back.png"
+                  data-colorways='[
+                  {"front": "images/ac/mar-front.png", "back": "images/ac/mar-back.png", "color": "#D1A972"}]'>View more ></button>
+                </div>
+            </div>
+
+            <!--Slide 3-->
+            <div class="swiper-slide">
+                <div class="card">
+                  <div class="blob-bg"></div>
+
+
+                  <div class="card-inner-wrapper">
+                    <div class="flip-trigger">
+                      <div class="card-inner">
+                        <div class="card-front">
+                          <img class="front-image" src="images/ac/tce-front.png" alt="Front of Guitar" />
+                        </div>
+                        <div class="card-back">
+                          <img class="back-image" src="images/ac/tce-back.png" alt="Back of Guitar" />
+                        </div>
+                    </div>
+                   </div>
+
+                   <!--Colorway dots-->
+                   <div class="color-options">
+                    <div class="color-dot active" data-front="images/ac/tce-front.png" data-back="images/ac/tce-back.png" style="background-color: #986027;" ></div>
+                   </div>
+                  </div>
+                  <h3>Taylor 512ce Urban</h3>
+                  <p>AED 8,000.00</p>
+                  <button class="view-more"
+                  data-name="Martin Guitar D-28E"
+                  data-price="AED 8,000.00"
+                  data-description="Our popular Deep 'C' neck now sports smooth rolled fingerboard edges, a 'Super-Natural' satin finish and a newly sculpted neck heel for a supremely comfortable feel and easy access to the upper register. New V-Mod II Telecaster single-coil pickups are more articulate than ever while delivering the twang, snap and snarl that made the Tele famous."
+                  data-image="images/ac/tce-front.png"
+                  data-back="images/ac/tce-back.png"
+                  data-colorways='[
+                  {"front": "images/ac/tce-front.png", "back": "images/ac/tce-back.png", "color": "#986027"}]'>View more ></button>
+                </div>
+            </div>
+
+            <!--Slide 4-->
+            <div class="swiper-slide">
+                <div class="card">
+                  <div class="blob-bg"></div>
+
+
+                  <div class="card-inner-wrapper">
+                    <div class="flip-trigger">
+                      <div class="card-inner">
+                        <div class="card-front">
+                          <img class="front-image" src="images/ac/tk-front.png" alt="Front of Guitar" />
+                        </div>
+                        <div class="card-back">
+                          <img class="back-image" src="images/ac/tk-back.png" alt="Back of Guitar" />
+                        </div>
+                    </div>
+                   </div>
+
+                   <!--Colorway dots-->
+                   <div class="color-options">
+                    <div class="color-dot active" data-front="images/ac/tk-front.png" data-back="images/ac/tk-back.png" style="background-color: #050505;" ></div>
+                   </div>
+                  </div>
+                  <h3>Takamine EF341SC</h3>
+                  <p>AED 4,000.00</p>
+                  <button class="view-more"
+                  data-name="Takamine EF341SC"
+                  data-price="AED 4,000.00"
+                  data-description="Our popular Deep 'C' neck now sports smooth rolled fingerboard edges, a 'Super-Natural' satin finish and a newly sculpted neck heel for a supremely comfortable feel and easy access to the upper register. New V-Mod II Telecaster single-coil pickups are more articulate than ever while delivering the twang, snap and snarl that made the Tele famous."
+                  data-image="images/ac/tk-front.png"
+                  data-back="images/ac/tk-back.png"
+                  data-colorways='[
+                  {"front": "images/ac/tk-front.png", "back": "images/ac/tk-back.png", "color": "#050505"}]'>View more ></button>
+                </div>
+            </div>
+
+        </div> <!--End of the swiper wrapper-->
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+        
+    </div>
+   </section>
+
+<!-- Login Modal -->
+<div class="auth-modal hidden" id="auth-modal">
+  <div class="auth-box">
+    <button class="close-modal" id="close-modal">&times;</button>
+    <h3>Welcome Back</h3>
+    <p class="subtext">Login to your account</p>
+
+    <div class="input-group">
+      <label for="auth-email">E-mail</label>
+      <input type="email" id="auth-email" placeholder="Enter your email address" required />
+    </div>
+
+    <div class="input-group password-wrapper">
+      <label for="auth-password">Password</label>
+      <input type="password" id="auth-password" placeholder="Password" required />
+      <button type="button" class="toggle-password">
+        <span class="material-symbols-outlined">visibility</span>
+      </button>
+    </div>
+
+    <button id="auth-submit">Login</button>
+
+    <div class="register">
+      Don’t have an account? <span id="signup-toggle">Register Now</span>
+    </div>
+
+    <p id="auth-message" class="auth-message"></p>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div class="auth-modal hidden" id="register-modal">
+  <div class="auth-box">
+    <button class="close-register-modal" id="close-register-modal">&times;</button>
+    <h3>User Registration</h3>
+    <p class="subtext">Enter your details to create your account</p>
+
+    <div class="input-group">
+      <label for="register-email">E-mail</label>
+      <input type="email" id="register-email" placeholder="Enter your email address" required />
+    </div>
+
+    <div class="input-group password-wrapper">
+      <label for="register-password">Password</label>
+      <input type="password" id="register-password" placeholder="Password" required />
+      <button type="button" id="register-password-toggle" class="toggle-password">
+        <span class="material-symbols-outlined">visibility</span>
+      </button>
+    </div>
+
+    <div class="input-group password-wrapper">
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" placeholder="Confirm Password" required />
+      <button type="button" id="confirm-password-toggle" class="toggle-password">
+        <span class="material-symbols-outlined">visibility</span>
+      </button>
+    </div>
+
+    <button id="register-submit">Register</button>
+
+    <div class="register">
+      Already have an account? <span id="login-toggle">Sign in</span>
+    </div>
+
+    <p id="register-message" class="auth-message"></p>
+  </div>
+</div>
+
+<!--Product Modal-->
+<div class="product-modal hidden" id="product-modal">
+  <div class="product-modal-content">
+    <button class="close-modal" id="close-product-modal">&times;</button>
+    <div class="modal-body">
+      <div class="modal-image-section">
+        <div class="blob-bg"></div>
+
+        <!-- Flip wrapper -->
+        <div class="image-wrapper" id="modal-image-wrapper">
+          <img id="modal-guitar-image" src="images/prs/sg-front.png" alt="Front of Guitar" />
+          <img id="modal-guitar-back" src="images/prs/sg-back.png" alt="Back of Guitar" />
+        </div>
+
+        <!-- Dynamically generated colorway buttons -->
+        <div class="color-options">
+        </div>
+      </div>
+
+      <div class="modal-info">
+        <h2 id="modal-product-name">PRS SE Silver Sky</h2>
+        <p id="modal-price">AED 3,400.00</p>
+        <p id="modal-description">
+          The result of a close collaboration between Grammy Award-winning musician John Mayer and Paul Reed Smith...
+        </p>
+
+        <div class="modal-actions">
+          <button id="add-to-cart">
+            <span class="material-symbols-outlined">shopping_cart</span>Add to cart
+          </button>
+          <button class="wishlist-btn" id="modal-wishlist-btn" 
+          data-product='{"id": "123", "name": "PRS SE Silver Sky", "price": "AED 3,400.00", "image": "images/prs/sg-front.png"}'>
+            <span class="material-symbols-outlined">favorite</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Cart Modal -->
+<div id="cart-panel" class="cart-panel">
+    <div class="cart-header">
+        <h3>Shopping Cart</h3>
+        <button id="close-cart">&times;</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+        <div class="cart-total">
+            Total: <span id="cart-total">AED 0</span>
+        </div>
+        <button id="checkout-btn">Proceed to Checkout</button>
+        <button class="continue-btn">Continue Shopping</button>
+    </div>
+</div>
+
+<!-- Checkout Modal -->
+<div class="checkout-modal hidden" id="checkout-modal">
+  <div class="checkout-box">
+    <button class="close-modal" id="close-checkout-modal">&times;</button>
+    <h3>Checkout</h3>
+    <div class="checkout-items">
+      <!-- Items will be listed here -->
+    </div>
+    <div class="checkout-total">
+      <h4>Total</h4>
+      <span id="checkout-total">AED 0</span>
+    </div>
+    <div class="checkout-actions">
+      <button id="confirm-checkout">Confirm Order</button>
+      <button id="cancel-checkout">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<div class="notification hidden" id="notification"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script type="module" src="js/config.js"></script>
+<script type="module" src="js/product-card.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/swiper-init.js"></script>
+<script type="module" src="js/auth.js"></script>
+<script type="module" src="js/cart.js"></script>
+<script type="module" src="js/product-modal.js"></script>
+<script type="module" src="js/wishlist.js"></script>
+<script type="module" src="js/checkout.js"></script>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>About The Tones</h4>
+            <p>Your premier destination for high-quality guitars and musical instruments.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#eg">Electric Guitars</a></li>
+                <li><a href="#bass">Bass Guitars</a></li>
+                <li><a href="#ag">Acoustic Guitars</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <ul>
+                <li>Email: info@thetones.com</li>
+                <li>Phone: +971 4 123 4567</li>
+                <li>Location: Dubai, UAE</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 The Tones. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
